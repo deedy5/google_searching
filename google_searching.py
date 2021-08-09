@@ -32,9 +32,9 @@ def ggl(query, num_results=20):
                 snippet = snippets[1].text_content()
                 rich_snippet = snippets[0].text_content()
 
-        res = {
-            'href': g.xpath('.//@href[1]')[0],
+        res = {            
             'title': g.xpath('.//h3/text()')[0],
+            'href': g.xpath('.//@href[1]')[0],
             'body': snippet,
             'rich_body': rich_snippet,
         }
