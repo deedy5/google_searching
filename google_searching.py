@@ -10,7 +10,7 @@ def get_url(url):
     if resp.status_code == 200:
         return resp
     
-def ggl(query, num_results=20):
+def ggl(query, max_results=20):
     query  = query.replace(' ','+')
     url = f'https://www.google.com/search?hl=en&q={query}&num={num_results}'
     resp = get_url(url)
