@@ -12,7 +12,7 @@ def get_url(url):
     
 def ggl(query, max_results=20):
     query  = query.replace(' ','+')
-    url = f'https://www.google.com/search?hl=en&q={query}&num={num_results}'
+    url = f'https://www.google.com/search?hl=en&q={query}&num={max_results}'
     resp = get_url(url)
     tree = html.fromstring(resp.text)
     results = []
