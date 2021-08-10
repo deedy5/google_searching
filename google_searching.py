@@ -3,7 +3,6 @@ import requests
 
 __version__ = 0.1
 
-
 def get_url(url):
     headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0"}
     url = f"https://{url}" if ('https://' not in url) else url
