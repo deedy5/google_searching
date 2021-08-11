@@ -1,4 +1,4 @@
-![Python >= 3.6](https://img.shields.io/badge/python->=3.6-red.svg) [![](https://badgen.net/github/release/deedy5/google_searching)](https://github.com/deedy5/google_searching/releases) [![](https://badge.fury.io/py/google_searching.svg)](https://pypi.org/project/google_searching) 
+![Python >= 3.6](https://img.shields.io/badge/python->=3.6-red.svg) [![](https://badgen.net/github/release/deedy5/google_searching)](https://github.com/deedy5/google_searching/releases) [![](https://badge.fury.io/py/google-searching.svg)](https://pypi.org/project/google_searching) 
 ## Google_searching
 
 Google.com search results.
