@@ -13,7 +13,7 @@ pip install -U google_searching
 ```
 
 ### Usage
-*WARNING : the site gives an captcha when making frequent repeated requests.*
+*WARNING!: the site gives an captcha when making frequent repeated requests.* <br/> Call ggl() function again after at least **5 seconds.**
 ```python
 from google_searching import ggl
 
