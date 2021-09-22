@@ -13,15 +13,14 @@ pip install -U google_searching
 ```
 
 ### Usage
-*WARNING : At the moment, the site gives an captcha when making frequent repeated requests.*
+*WARNING : the site gives an captcha when making frequent repeated requests.*
 ```python
 from google_searching import ggl
 
 ggl(keywords, max_results=30):
-    '''
-    Google search
+    ''' Google search
     keywords: keywords for query,
-    max_results: max 100 results for date.
+    max_results: not limited, in practice about 500.
     '''
 ```
 ### Returns
