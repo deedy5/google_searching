@@ -14,7 +14,7 @@ def ggl(keywords, max_results=20):
     num = min(max_results + 5, 100)
     start = 0
     while True:
-        url = f'https://www.google.com/search?q={query}&num={max_results}&hl=en&&start={start}'
+        url = f'https://www.google.com/search?q={query}&num={num}&hl=en&start={start}'
         resp = session.get(url, timeout=5)
         if resp.status_code == 429:
             print('Сaptcha! Return None')
