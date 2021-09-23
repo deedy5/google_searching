@@ -3,7 +3,7 @@ from time import sleep
 import requests
 from lxml import html
 
-__version__ = 0.3
+__version__ = '0.3.1'
 
 session = requests.Session()
 session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0"})
@@ -11,7 +11,7 @@ session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Ge
 def ggl(keywords, max_results=20):
     query  = keywords.replace(' ','+')
     results = []
-    num = min(max_results, 100)
+    num = min(max_results + 5, 100)
     start = 0
     while True:
         url = f'https://www.google.com/search?q={query}&num={max_results}&hl=en&&start={start}'
