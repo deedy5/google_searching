@@ -3,7 +3,7 @@ from time import sleep
 import requests
 from lxml import html
 
-__version__ = '0.3.1'
+__version__ = '0.4'
 
 session = requests.Session()
 session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0"})
