@@ -8,7 +8,7 @@ setup(
     name="google_searching",
     version=__version__,
     author="deedy5",
-    author_email="deedy-ru@ya.ru",
+    author_email="",
     description="Scraping google search results",
     long_description=long_description,
     long_description_content_type="text/markdown",
