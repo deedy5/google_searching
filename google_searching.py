@@ -3,7 +3,7 @@ from time import sleep
 import requests
 from lxml import html
 
-__version__ = '0.5'
+__version__ = '0.6'
 
 session = requests.Session()
 session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"})
@@ -39,7 +39,7 @@ def ggl(keywords, max_results=20):
                         snippet = snippets[1].text_content()
                         rich_snippet = snippets[0].text_content()
                 res = {            
-                    'title': g.xpath('.//h3/text()')[0],
+                    'title': g.xpath('.//h3//text()')[0],
                     'href': g.xpath('.//@href[1]')[0],
                     'body': snippet,
                     'rich_body': rich_snippet,
