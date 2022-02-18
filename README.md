@@ -3,10 +3,6 @@
 
 Google.com search results.
 
-### Dependencies
-```python
-lxml, requests
-```
 ### Install
 ```python
 pip install -U google_searching
@@ -17,21 +13,27 @@ pip install -U google_searching
 ```python
 from google_searching import ggl
 
-ggl(keywords, max_results=30):
+ggl(keywords, lang='en', max_results=20):
     ''' Google search
     keywords: keywords for query,
+    lang: language of search results,
     max_results: not limited, in practice about 500.
     '''
 ```
 ### Returns
 ```python
-[{'title': title of result,
+[
+{'title': title of result,
   'href': href of result,
-  'body': body of result,
-  'rich_body': rich body of result,},
-  '
- {'title': title of result,
-  'href': href of result,
-  'body': body of result,
-  'rich_body': rich body of result,}, ...]
+  'body': body of result},
+...
+]
+```
+
+### Example
+```python3
+from google_searching import ggl
+
+r = ggl('usa', lang='en', max_results=100)
+print(r)
 ```
