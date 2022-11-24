@@ -4,10 +4,10 @@ from time import sleep
 import requests
 from lxml import html
 
-__version__ = '0.8'
+__version__ = '0.8.1'
 
 session = requests.Session()
-session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"})
+session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0"})
 
 
 def ggl(keywords, lang='en', max_results=20):
@@ -26,7 +26,7 @@ def ggl(keywords, lang='en', max_results=20):
         
         if resp.status_code == 200:
             tree = html.fromstring(resp.text)
-            elements = tree.xpath("//div[./div/a/h3]")
+            elements = tree.xpath("//div[./div/a//h3]")
             
             if not elements:
                 return results
